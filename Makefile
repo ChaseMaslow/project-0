@@ -7,7 +7,7 @@
 # appropriate location.
 
 install:
-	# Nothing installed
+	cp credentials.ini hello
 
 run:
-	@(cd hello; python3 hello.py)
+	@(cd hello; python3 hello.py; rm credentials.ini)
